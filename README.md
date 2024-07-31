@@ -12,3 +12,9 @@
 
 - use folder/file or /folder/file to ignore a specific file at the root of the folder
 
+### API testing
+- thunder client (vscode extension)
+
+- postman
+
+- insomnia
