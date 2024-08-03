@@ -34,3 +34,13 @@
 ### model
 
 - A model is a class with which we construct documents. In mongoose, each document is an instance of its model.
+
+### Schema
+
+- A Schema is a blueprint of the database which defines the shape of the documents within a collection.
+
+### Middleware
+
+- By default we cannot send json data to the server. To enable this we need to use express.json() middleware.
+
+- Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle.
