@@ -62,3 +62,14 @@
 - but why is this better? 
 
 - because it makes the code more readable and maintainable.
+
+### CRUD
+
+- Create : POST
+
+- Read : GET
+
+- Update : PUT
+
+- Delete : DELETE
+
