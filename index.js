@@ -2,10 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const userDetails = require('./models/userDetails.model.js')
 const app = express();
-
+// middleware
 app.use(express.json());
 
-
+//route
+app.use("/api/users", userRoute);
 
 app.get('/', (req,res)=>{
     res.send("Hello Ganesh");
@@ -37,7 +38,7 @@ app.post('/api/users', async (req,res) =>{
 
 // update
 
-app.put('/api/user/:username', async (req,res) =>{
+app.put('/api/users/:username', async (req,res) =>{
     try{
         const {username} = req.params;
         const updateData = req.body;
@@ -57,7 +58,7 @@ app.put('/api/user/:username', async (req,res) =>{
 
 // delete
 
-app.delete('/api/user/delete/:username', async(req,res) =>{
+app.delete('/api/users/delete/:username', async(req,res) =>{
  try{
     const {username} = req.params;
     await userDetails.findOneAndDelete(username);

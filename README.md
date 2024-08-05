@@ -44,3 +44,21 @@
 - By default we cannot send json data to the server. To enable this we need to use express.json() middleware.
 
 - Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle.
+
+### routes
+
+- A route is a section of Express code that associates an HTTP verb (GET, POST, PUT, DELETE, etc.), a URL path/pattern, and a function that is called to handle that pattern.
+
+### Better way to handle routes
+
+- Create a separate file for routes and import it in the main file.
+
+- also use controllers to handle the routes. which is again a separate file.
+
+- import these controllers in the routes file.
+
+- and the routes file in the main file.
+
+- but why is this better? 
+
+- because it makes the code more readable and maintainable.
